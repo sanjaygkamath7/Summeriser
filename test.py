@@ -1,7 +1,7 @@
 import pymongo
 
 # Replace with your actual MongoDB connection string
-mongo_uri = "mongodb+srv://sanjaykamath6969:wBgUzSlKebdHlsXJ@cluster0.wlatvo2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+mongo_uri = "mongouri"
 
 try:
     client = pymongo.MongoClient(mongo_uri)
