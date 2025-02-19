@@ -28,7 +28,7 @@ llm_model = "google/flan-t5-xl"
 llm = Cohere(cohere_api_key=COHERE_API_KEY)
 
 # Connect to MongoDB
-client = pymongo.MongoClient("mongodb+srv://sanjaykamath6969:wBgUzSlKebdHlsXJ@cluster0.wlatvo2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+client = pymongo.MongoClient("mongouri")
 db = client["Login"]
 collection = db["Signup"]
 
