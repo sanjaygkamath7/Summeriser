@@ -4,7 +4,7 @@ import streamlit as st
 # Function to connect to MongoDB and return the collection
 def get_collection():
     try:
-        client = pymongo.MongoClient("mongodb+srv://sanjaykamath6969:wBgUzSlKebdHlsXJ@cluster0.wlatvo2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+        client = pymongo.MongoClient("mongouri")
         db = client["Login"]
         collection = db["Signup"]
         st.success("MongoDB connected successfully!")
