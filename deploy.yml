@@ -1,0 +1,11 @@
+---
+- name: Deploy Maven Artifact
+  hosts: local
+  become: yes
+  tasks:
+     
+    - name: Copy the artifact to the deployment directory
+      copy: 
+         src: "/var/lib/jenkins/workspace/prog8/target/program8-0.0.1-SNAPSHOT.jar"
+         dest: "/home/sanjay/ansible-demo/Mavenhello.jar" 
+
